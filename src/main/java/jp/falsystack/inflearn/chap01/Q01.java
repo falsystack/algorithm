@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 
 /**
  * 문자 찾기
+ * 文字探し
  */
 public class Q01 {
 

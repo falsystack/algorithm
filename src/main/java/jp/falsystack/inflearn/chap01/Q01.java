@@ -10,15 +10,30 @@ import java.io.InputStreamReader;
 public class Q01 {
 
   public static void main(String[] args) throws IOException {
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    char[] chars = br.readLine().toCharArray();
-    char target = br.readLine().charAt(0);
+    char[] chars = getChars();
+    char target = getTarget();
     int count = 0;
     for (char aChar : chars) {
-      if (Character.toUpperCase(aChar) == Character.toUpperCase(target)) {
+      if (isEqual(target, aChar)) {
         count++;
       }
     }
     System.out.println(count);
+  }
+
+  private static String getString() throws IOException {
+    return new BufferedReader(new InputStreamReader(System.in)).readLine();
+  }
+
+  private static char getTarget() throws IOException {
+    return getString().toUpperCase().charAt(0);
+  }
+
+  private static char[] getChars() throws IOException {
+    return getString().toUpperCase().toCharArray();
+  }
+
+  private static boolean isEqual(char target, char aChar) {
+    return aChar == target;
   }
 }

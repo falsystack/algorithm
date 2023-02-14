@@ -10,9 +10,11 @@ import java.io.InputStreamReader;
  */
 public class Q10926 {
 
+  public static final String SURPRISED = "??!";
+
   public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    String result = br.readLine() + "??!";
+    String result = br.readLine() + SURPRISED;
     System.out.println(result);
   }
 

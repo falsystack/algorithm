@@ -17,15 +17,19 @@ public class Q2753 {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     int year = Integer.parseInt(br.readLine());
 
-    boolean baesooOf4 = year % 4 == 0;
-    boolean baesooOf100 = year % 100 == 0;
-    boolean baesooOf400 = year % 400 == 0;
-
-    if (baesooOf4 && (!baesooOf100 || baesooOf400)) {
+    if (isLeapYear(year)) {
       System.out.println(1);
       return;
     }
     System.out.println(0);
+  }
+
+  private static boolean isLeapYear(int year) {
+    boolean multipleOfFour = year % 4 == 0;
+    boolean multipleOfOneHundred = year % 100 == 0;
+    boolean multipleOfFourHundred = year % 400 == 0;
+
+    return multipleOfFour && (!multipleOfOneHundred || multipleOfFourHundred);
   }
 
 }

@@ -3,7 +3,6 @@ package jp.falsystack.baekjoon.chap01;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class Q2884 {
 

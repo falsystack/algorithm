@@ -15,7 +15,11 @@ public class Q08 {
     String replacedStr = str.replaceAll("[^A-Z]", "");
     StringBuilder reversedStr = new StringBuilder(replacedStr).reverse();
 
-    System.out.println(replacedStr.equals(reversedStr.toString()));
+    if (replacedStr.equals(reversedStr.toString())) {
+      System.out.println("YES");
+      return;
+    }
+    System.out.println("NO");
   }
 
 }

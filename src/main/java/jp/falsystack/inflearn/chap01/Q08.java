@@ -14,8 +14,6 @@ public class Q08 {
 
     String replacedStr = str.replaceAll("[^A-Z]", "");
     StringBuilder reversedStr = new StringBuilder(replacedStr).reverse();
-    System.out.println(replacedStr);
-    System.out.println(reversedStr);
 
     System.out.println(replacedStr.equals(reversedStr.toString()));
   }

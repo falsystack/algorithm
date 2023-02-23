@@ -10,7 +10,8 @@ public class Q11382 {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     String[] strings = br.readLine().split(" ");
     System.out.println(
-        Integer.parseInt(strings[0]) + Integer.parseInt(strings[1]) + Integer.parseInt(strings[2]));
+        Long.parseLong(strings[0]) + Long.parseLong(strings[1]) + Long.parseLong(strings[2])
+    );
   }
 
 }

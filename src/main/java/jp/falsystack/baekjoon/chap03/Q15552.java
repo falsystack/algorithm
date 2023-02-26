@@ -1,4 +1,4 @@
-package jp.falsystack.baekjoon.chap01;
+package jp.falsystack.baekjoon.chap03;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

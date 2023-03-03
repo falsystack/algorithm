@@ -1,4 +1,4 @@
-package jp.falsystack.baekjoon.chap03;
+package jp.falsystack.baekjoon.chap04;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -25,10 +25,12 @@ func main() {
 	splitedStr := strings.Split(line, " ")
 
 	result := 0
-	for _, str := range splitedStr {
+	idx := 0
+	for i, str := range splitedStr {
 		if len(str) > result {
 			result = len(str)
+			idx = i
 		}
 	}
-	fmt.Println(result)
+	fmt.Println(splitedStr[idx])
 }
